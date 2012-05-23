@@ -1,0 +1,7 @@
+<menu type="toolbar">
+<li>
+<menu label="File">
+<button type="button" onclick="file_new()">New...</button>
+<button type="button" onclick="file_open()">Open...</button>
+<button type="button" onclick="file_save()">Save</button>
+</menu>

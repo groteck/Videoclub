@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#makeMeScrollable").smoothDivScroll({ 
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "onstart"
+		});
+	});
+</script>
+
+<div id="makeMeScrollable">
+<div class="scrollingHotSpotLeft scrollingHotSpotLeftVisible" style=""></div>
+<div class="scrollingHotSpotRight scrollingHotSpotRightVisible" style=""></div>
+<div class="scrollWrapper">
+<div class="scrollableArea" style="width: 3784px; ">
+			<%= image_tag("images/demo/field.jpg")%>
+			<%= image_tag("images/demo/gnome.jpg")%>
+			<%= image_tag("images/demo/pencils.jpg")%>
+			<%= image_tag("images/demo/golf.jpg")%>
+			<%= image_tag("images/demo/river.jpg")%>
+			<%= image_tag("images/demo/train.jpg")%>
+			<%= image_tag("images/demo/leaf.jpg")%>
+		</div>
+	</div>
+</div>

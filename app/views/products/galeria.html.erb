@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#makeMeScrollable").smoothDivScroll({ 
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "onstart"
+		});
+	});
+</script>
+
+<div id="makeMeScrollable">
+<div class="scrollingHotSpotLeft scrollingHotSpotLeftVisible" style=""></div>
+<div class="scrollingHotSpotRight scrollingHotSpotRightVisible" style=""></div>
+<div class="scrollWrapper">
+<div class="scrollableArea" style="width: 3784px; ">
+	<%= @product.each do |p|%>
+			<%= image_tag(p.url_image)%>
+	<%end%>
+		</div>
+	</div>
+</div>

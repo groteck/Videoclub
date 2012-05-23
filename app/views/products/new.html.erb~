@@ -1,0 +1,34 @@
+<h1>New Product</h1>
+<%= form_for @product do |f|%>
+  <% if @product.errors.any? %>
+      <div class="error_messages">
+        <h2>Form is invalid</h2>
+        <ul>
+            <%for message in @product.errors.full_messages%>
+               <li><%=message%></li>
+            <% end %>
+        </ul>
+      </div>
+   <% end %>
+   <p>
+      <%= f.label :titulo %>
+      <%= f.text_field :title%>
+   </p>
+   <p>
+      <%= f.label :Año %>
+      <%= f.text_field :year %>
+   </p>
+   <p>
+      <%= f.label :duracion %>
+      <%= f.text_field :time %>
+   </p>
+   <p>
+      <%= f.label :sinopsis %>
+      <%= f.text_field :sinopsis %>
+   </p>
+   <p>
+      <%= f.label :precio %>
+      <%= f.text_field :price %>
+   </p>
+   <p class="button"><%= f.submit %></p>
+<% end %>

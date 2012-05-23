@@ -1,0 +1,6 @@
+<div>
+	<%=form_for (@user) do |f| %>
+		<br><%= f.label :email %><br />
+    		<%= f.text_field :email %>
+	<%end%>
+</div>

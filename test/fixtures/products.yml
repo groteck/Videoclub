@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  year: 1
+  time: 1
+  sinopsis: MyText
+  price: 1.5
+  url_image: MyString
+  url_film: MyString
+
+two:
+  name: MyString
+  year: 1
+  time: 1
+  sinopsis: MyText
+  price: 1.5
+  url_image: MyString
+  url_film: MyString
