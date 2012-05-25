@@ -30,9 +30,7 @@ Videoclub::Application.routes.draw do
   get "perfil" => "users#edit", :as => "Mi_perfil"
   
   root :to => 'products#galeria'
-  
-  resources :users
-  resources :sessions
+    resources :sessions
   resources :products
 
   # The priority is based upon order of creation:
