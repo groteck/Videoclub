@@ -1,6 +1,0 @@
-<div class="Gestion">
-	<%= link_to "Gestion Usuarios", users_management_path,class: "btn btn-large btn-primary" %>
-	<%= link_to "Gestion Peliculas", films_management_path,class: "btn btn-large btn-primary" %>
-	<%= link_to "Ventas", sign_up_path,class: "btn btn-large btn-primary" %>
-</div>
-
