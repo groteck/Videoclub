@@ -2,37 +2,10 @@ Videoclub::Application.routes.draw do
 
   devise_for :users
 
-  get "products/new"
-
-  get "products/create"
-
-  get "products/update"
-
-  get "products/show"
-
-  get "products/destroy"
-  
-  get "products/index"
-  
-  get "products/edit"
-
-
-  get "commercials/new"
-
-  get "commercial/new"
-
-  get "users_management" => "users#index", :as => "users_management"
   get "films_management" => "products#index", :as => "films_management"
-
-  get "log_in" => "sessions#new", :as => "log_in"
-  get "log_out" => "sessions#destroy", :as => "log_out"
-
-  get "sign_up" => "users#new", :as => "sign_up"
-	
-  get "perfil" => "users#edit", :as => "Mi_perfil"
   
   root :to => 'products#galeria'
-    resources :sessions
+  resources :sessions
   resources :products
 
   # The priority is based upon order of creation:
