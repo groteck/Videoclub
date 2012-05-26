@@ -1,5 +1,7 @@
 Videoclub::Application.routes.draw do
 
+  devise_for :users
+
   get "products/new"
 
   get "products/create"
