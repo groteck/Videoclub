@@ -22,6 +22,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+#users administrator
+gem 'devise'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -30,7 +33,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-				gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
